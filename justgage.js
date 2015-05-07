@@ -92,6 +92,19 @@
      * Option to configure minimum font size for all texts
      * Option to show shorthand big numbers (human friendly)
      */
+(function (glob, factory) {
+    // AMD support
+    if (typeof define === "function" && define.amd) {
+        // Define as an anonymous module
+        define(["raphael","eve"], function( raphael,eve ) {
+            return factory(glob, raphael,eve);
+        });
+    } else {
+        // Browser globals (glob is window)
+        // Raphael adds itself to window
+        factory(glob, glob.raphael || (typeof require == "function" && require('raphael')), glob.eve || (typeof require == "function" && require('eve')) );
+    }
+}(this, function (window, Raphael,eve) {
 
  JustGage = function(config) {
 
@@ -1049,3 +1062,6 @@ var ie = (function(){
     );
     return v > 4 ? v : undef;
 }());
+
+return JustGage;
+}));
