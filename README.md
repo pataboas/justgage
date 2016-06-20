@@ -1,10 +1,40 @@
-![justGage](https://dl.dropbox.com/u/6211055/IMG/justgage_logo.png)
-
 JustGage is a handy JavaScript plugin for generating and animating nice &amp; clean dashboard gauges. It is based on Raphaël library for vector drawing.
 
-Checkout http://justgage.com for details, demos, current release and more.
-
 ###Update log
+
+######March 29, 2016.
+ * **refresh(val, max, config)** - now you can include config object when calling refresh function to update any existing justGage parameter   
+
+######March 25, 2016.
+ * **onAnimationEnd** - callback function after gauge animation ends
+ - demo at http://justgage.com/examples/animation-events-hooks.html
+
+######February 3, 2016.
+ * **minTxt & maxTxt** - Show custom min and max text - https://github.com/toorshia/justgage/issues/193
+
+######January 31, 2016.
+ * fix - https://github.com/toorshia/justgage/issues/194
+
+######January 27, 2016.
+ * **titlePosition** - 'above' or 'below'
+ * **titleFontFamily** - customize font-family for the title
+ * **valueFontFamily** - customize font-family for the value
+ - demo at http://justgage.com/examples/font-options.html
+
+
+######January 5, 2016.
+ * **donut pointer** - render configurable triangle pointer in donut mode - demo at http://justgage.com/examples/pointer.html
+
+######November 10, 2015.
+ * **reverse** - reverse the gauge direction - demo at http://justgage.com/examples/reverse.html
+ * **pointer** - render triangular value pointer - demo at http://justgage.com/examples/pointer.html
+
+
+######November 08, 2015.
+ * **defaults** - option to define common config object when you're creating multiple gauges - demo at http://justgage.com/examples/defaults.html
+
+######August 19, 2015.
+ * fixed shadow id issue (same ids were being generated)
 
 ######February 16, 2014.
  * fix - https://github.com/toorshia/justgage/issues/102
@@ -13,7 +43,7 @@ Checkout http://justgage.com for details, demos, current release and more.
  * use HTML5 'data' attributes of the DOM Element to render the gauge. (Note: data attributes override the constructor options, if present.)
 
 ######April 18, 2013.
- * **parentNode** - use instead of id, attaches gauge to node which is outside of DOM tree - demo at http://justgage.com/demos/custom-node/
+ * **parentNode** - use instead of id, attaches gauge to node which is outside of DOM tree - demo at http://justgage.com/examples/custom-node.html
  * **width** - force gauge width
  * **height** - force gauge height
 
@@ -24,13 +54,13 @@ Checkout http://justgage.com for details, demos, current release and more.
  * fix - https://github.com/toorshia/justgage/issues/46
 
 ######March 26, 2013.
- * **customSectors** - define one or many value ranges with custom gauge color - demo at http://justgage.com/demos/custom-sectors/
+ * **customSectors** - define one or many value ranges with custom gauge color - demo at http://justgage.com/examples/custom-sectors.html
 
 ######March 23, 2013.
- * **counter** - option to animate value in counting fashion - check demo at http://justgage.com/demos/counter/
+ * **counter** - option to animate value in counting fashion - check demo at http://justgage.com/examples/counter.html
 
 ######March 19, 2013.
- * **refresh()** - added optional 'max' parameter to use when you need to update max value - demo at http://justgage.com/demos/refreshmax/
+ * **refresh()** - added optional 'max' parameter to use when you need to update max value - demo at http://justgage.com/examples/refresh-maximum.html
 
 ######February 26, 2013.
  * **decimals** - option to define/limit number of decimals when not using humanFriendly or customRenderer to display value
